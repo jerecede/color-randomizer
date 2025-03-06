@@ -1,30 +1,28 @@
-//rgbString, hex, array, object
-
-
 
 function randomColorArray() {
     const colorObj = randomColorObj();
-    const color = [colorObj.r, colorObj.g, colorObj.b];
-    return color;
+    return [colorObj.r, colorObj.g, colorObj.b];
 }
 
 function randomColorHex() {
-    const decToHex = dec => dec.toString(16);
+    const decToHex = dec => dec.toString(16).padStart(2, '0');
 
     const colorObj = randomColorObj();
 
+    // const rHex = ('0' + decToHex(colorObj.r)).slice(-2);
+    // const gHex = ('0' + decToHex(colorObj.g)).slice(-2);
+    // const bHex = ('0' + decToHex(colorObj.b)).slice(-2);
+
     const rHex = decToHex(colorObj.r);
     const gHex = decToHex(colorObj.g);
-    const bhex = decToHex(colorObj.b);
+    const bHex = decToHex(colorObj.b);
 
-    const color = `#${rHex}${gHex}${bhex}`;
-    return color;
+    return `#${rHex}${gHex}${bHex}`;
 }
 
 function randomColorRgbString() {
     const colorObj = randomColorObj();
-    const color = `rgb(${colorObj.r}, ${colorObj.g}, ${colorObj.b})`;
-    return color;
+    return `rgb(${colorObj.r}, ${colorObj.g}, ${colorObj.b})`;
 }
 
 function randomColorObj() {
@@ -37,11 +35,6 @@ function randomColorObj() {
         g: green,
         b: blue
     }
+
     return color;
 }
-
-console.log(randomColorObj());
-console.log(randomColorArray());
-console.log(randomColorRgbString());
-console.log(randomColorHex());
-

@@ -30,17 +30,16 @@ function randomColorRgbString() {
 }
 
 function randomColorObj() {
-    
     const color = {
         r: red,
         g: green,
         b: blue
     }
-
     return color;
 }
 
-console.log(randomColorArray());
-console.log(randomColorHex());
-console.log(randomColorRgbString());
 console.log(randomColorObj());
+console.log(randomColorArray());
+console.log(randomColorRgbString());
+console.log(randomColorHex());
+

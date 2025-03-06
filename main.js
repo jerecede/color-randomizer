@@ -1,8 +1,6 @@
 //rgbString, hex, array, object
 
-const red = Math.round(Math.random() * 255);
-const green = Math.round(Math.random() * 255);
-const blue = Math.round(Math.random() * 255);
+
 
 function randomColorArray() {
     const colorObj = randomColorObj();
@@ -30,6 +28,10 @@ function randomColorRgbString() {
 }
 
 function randomColorObj() {
+    const red = Math.round(Math.random() * 255);
+    const green = Math.round(Math.random() * 255);
+    const blue = Math.round(Math.random() * 255);
+
     const color = {
         r: red,
         g: green,

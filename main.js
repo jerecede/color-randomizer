@@ -25,7 +25,7 @@ function randomColorHex() {
 
 function randomColorRgbString() {
     const colorObj = randomColorObj();
-    const color = `rgb(${colorObj.r},${colorObj.g},${colorObj.b})`;
+    const color = `rgb(${colorObj.r}, ${colorObj.g}, ${colorObj.b})`;
     return color;
 }
 

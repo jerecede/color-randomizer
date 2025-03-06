@@ -15,11 +15,11 @@ function randomColorHex() {
 
     const colorObj = randomColorObj();
 
-    const stringRed = decToHex(colorObj.r);
-    const stringGreen = decToHex(colorObj.g);
-    const stringBlue = decToHex(colorObj.b);
+    const rHex = decToHex(colorObj.r);
+    const gHex = decToHex(colorObj.g);
+    const bhex = decToHex(colorObj.b);
 
-    const color = `#${stringRed}${stringGreen}${stringBlue}`;
+    const color = `#${rHex}${gHex}${bhex}`;
     return color;
 }
 

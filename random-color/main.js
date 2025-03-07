@@ -38,3 +38,10 @@ function randomColorObj() {
 
     return color;
 }
+
+export {
+    randomColorArray,
+    randomColorObj,
+    randomColorRgbString,
+    randomColorHex
+}
